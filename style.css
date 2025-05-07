@@ -28,61 +28,49 @@ body {
 
 .top-sec {
     width: 100%;
-    height: fit-content;
+    padding: 3rem 10%;
+    position: relative; /* baru */
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    padding-left: 10%;
+    gap: 3rem;
+    background: #f7f7f7; /* opsional */
 }
 
 .user-sec {
     width: fit-content;
 }
 
-.yellow-bar {
-    width: 8rem;
-    height: 22rem;
-    background: #FFB701;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-}
-
 .user-circle {
-    width: 14rem;
-    aspect-ratio: 1/1;
-    background: #fff;
-    position: absolute;
-    border-radius: 50%;
-    top: 3rem;
-    box-shadow: rgba(50,50,93,0.15) 50px 0px 80px -20px, rgba(0,0,0,0.2) 30px 0px 40px -30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative; /* ubah dari absolute jadi relative */
+    top: 0; /* reset */
+    left: 0;
+    margin-top: 0; /* pastikan tidak menggeser ke bawah */
 }
 
 .under-yellow {
     width: 80%;
     height: 80%;
-    background: #FFB701;
+    background: #0145ff;
     border-radius: 50%;
     box-shadow: rgba(50,50,93,0.15) 20px 0px 50px -20px, rgba(0,0,0,0.2) 30px 0px 40px -30px;
 }
-
 .under-yellow img {
     width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain; /* ganti dari cover ke contain */
     border-radius: 50%;
+    background-color: #0145ff; /* tambahkan supaya kosongannya biru */
 }
 
+
 .user-name {
-    margin-left: 10%;
+    margin-left: 2%;
     margin-top: -4rem;
 }
 
 .user-name h1 {
     font-size: 60px;
-    line-height: 75px;
+    line-height: 65px;
     font-weight: 800;
     color: #424341;
 }
@@ -92,26 +80,6 @@ body {
     color: #424341;
 }
 
-.icon-sec {
-    display: flex;
-    gap: 35px;
-    margin-top: 1.5rem;
-}
-
-.icon-sec a {
-    width: 28px;
-    aspect-ratio: 1/1;
-    background: #FFB701;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    text-decoration: none;
-}
-
-.icon-sec a i {
-    color: #fff;
-}
 
 .bottom-sec {
     width: 100%;
@@ -184,7 +152,7 @@ body {
     width: 90%;
     height: 10px;
     border: none;
-    background: #FFB701;
+    background: #3a2cb4;
     border-radius: 5px;
 }
 
@@ -209,11 +177,11 @@ body {
 }
 
 .r-heading {
-    background: #FFB701;
+    background: #0145ff;
 }
 
 .r-heading h3 {
-    color: #424341;
+    color: #ffffff;
 }
 
 .r-heading h3 i {
@@ -246,7 +214,7 @@ body {
 .university .dot {
     width: 15px;
     aspect-ratio: 1/1;
-    background: #FFB701;
+    background: #698beb;
     border-radius: 50%;
     margin-top: 4px;
 }
